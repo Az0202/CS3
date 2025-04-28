@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## 📂 Repository Structure
 ```
-.
+📂 Music-Genre-Case-Study
 ├─ README.md
 ├─ LICENSE.md
 ├─ requirements.txt
