@@ -32,8 +32,6 @@ pip install -r requirements.txt
 ├─ README.md
 ├─ LICENSE.md
 ├─ requirements.txt
-├─ Hook_Document.pdf      # Your one-page mission brief
-├─ Rubric.pdf             # Your two-page detailed rubric
 │
 ├─ DATA/
 │   ├─ tcc_ceds_music.csv             # Original lyrics dataset
