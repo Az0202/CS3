@@ -1,124 +1,119 @@
-# 🎵 What Makes a Genre
+
+# 🎵 Music-Genre Case Study
 
 ## 📌 Overview
-This project explores the possibility of classifying music genres solely based on song lyrics using **Natural Language Processing (NLP)** and **Machine Learning** techniques. We used two main approaches:
-1. **Traditional ML Models:** TF-IDF vectorization with Logistic Regression and Neural Networks.
-2. **Deep Learning Models:** BERT embeddings fine-tuned for genre classification.
+In this case study, you’ll play the role of a data scientist at a music-streaming company. Your mission is to discover whether song lyrics alone can reveal a track’s genre. You will:
 
-## 🛠️ Software & Platforms
-- **Python** (Pandas, NumPy, Scikit-Learn, TensorFlow, Matplotlib, Seaborn)
-- **Jupyter Notebook**
-- **Google Colab** (for cloud-based computation)
-- **GitHub** (for version control and collaboration)
-- **Operating System:** Windows / Mac / Linux
-
-## 📁 CS3
-```
-📂 Music-Genre-Case-Study
-│── 📄 README.md                    # Project documentation
-│── 📄 LICENSE.md                   # MIT License
-│── 📄 requirements.txt             # List of project dependencies
-│
-│── 📂 DATA/                        # Dataset and Data Appendix
-│   │── Data Appendix Project 1.pdf   # Detailed information about the dataset
-│   │── processed_data.csv            # Cleaned dataset ready for analysis
-│   │── tcc_ceds_music.csv            # Original dataset
-│   │── train_data.csv                # 80% of processed_data used for training models
-│   │── test_data.csv                 # 20% of processed_data used for testing models
-│
-│── 📂 OUTPUT/                      # Generated results and reports
-│   │
-│   │── 📂 MODELS/                   # Trained models and configurations
-│   │   │── config.json                 # Model configuration
-│   │   │── link to Hugging Face Model Hub repository  # Reference link to model on Hugging Face
-│   │   │── model.safetensors            # Trained model weights in safetensors format
-│   │   │── special_tokens_map.json      # Special tokens mapping for tokenizer
-│   │   │── tokenizer_config.json        # Tokenizer configuration
-│   │   │── vocab.txt                    # Vocabulary used by tokenizer
-│   │
-│   │── 📂 confusion matrices using BERT/
-│   │   │── LR_confusion_matrix_BERT.png   # Confusion Matrix for Logistic Regression using BERT
-│   │   │── NN_confusion_matrix_BERT.png   # Confusion Matrix for Neural Network using BERT
-│   │
-│   │── 📂 confusion matrices using TF-IDF/
-│   │   │── LR_confusion_matrix_TF-IDF.png # Confusion Matrix for Logistic Regression using TF-IDF
-│   │   │── NN_confusion_matrix_TF-IDF.png # Confusion Matrix for Neural Network using TF-IDF
-│   │
-│   │── PCA_visualization.png              # PCA visualization of BERT embeddings
-│   │── X_embeddings.npy                   # Saved BERT embeddings for lyrics
-│   │── genre_classification_report_using_BERT.pdf   # Classification report for BERT
-│   │── genre_classification_report_using_TF-IDF_&_Logistic Regression.pdf # Classification report for TF-IDF & LogReg
-│   │── label_encoder.pkl                  # Label encoder for genre classification
-│   │── logistic_regression_bert.pkl        # Trained Logistic Regression model using BERT
-│   │── neural_network_bert.h5              # Trained Neural Network model using BERT
-│   │── test_predictions.csv                # Predictions made on test data
-│   │── tfidf_vectorizer.pkl                # TF-IDF vectorizer for text features
-│   │── y.npy                              # Encoded genre labels
-│
-│── 📂 SCRIPTS/                     # All scripts for training, testing, and visualizations
-│   │
-│   │── 📂 Testing Models scripts/  # Scripts to test different models
-│   │   │── test_bert_model.ipynb      # Jupyter Notebook to test BERT model performance
-│   │   │── test_ml_model.ipynb        # Jupyter Notebook to test ML models performance
-│   │
-│   │── 📂 visualization scripts/  # Scripts for generating visualizations
-│   │   │── visualization_for_ml_models.ipynb     # Visualizations for ML model performance
-│   │   │── visualizations_for_bert_model_performance.ipynb  # Visualizations for BERT model performance
-│   │
-│   │── EDA.ipynb                     # Exploratory Data Analysis notebook
-│   │── bert_based_classification.ipynb # BERT-based classification approach
-│   │── extract_embeddings.py          # Extract BERT embeddings from lyrics
-│   │── predict_genre_bert_model.py     # Predict genre using the BERT model
-│   │── predict_genre_ml_models.py      # Predict genre using traditional ML models
-│   │── preprocess_data.py              # Data cleaning and preprocessing
-│   │── train_bert_model.py             # Train BERT-based genre classifier
-│   │── train_ml_models.py              # Train ML models (Logistic Regression, Neural Network)
-│   │── train_test_split.ipynb          # Split data into training and testing sets
-│   │── utils.py                       # Helper functions and utilities
-
-```
-
-## 🔄 Reproducibility
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rixprakash/Jarheads.git
-   cd "Project 1"
-   ```
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Preprocess Data:**
-   ```bash
-   python SCRIPTS/preprocess_data.py
-   ```
-4. **Extract BERT Embeddings:**
-   ```bash
-   python SCRIPTS/extract_embeddings.py
-   ```
-5. **Train the Models:**
-   - **Traditional ML Models:**
-     ```bash
-     python SCRIPTS/train_ml_models.py
-     ```
-   - **Fine-tune BERT Model:**
-     ```bash
-     python SCRIPTS/train_bert_model.py
-     ```
-6. **Visualizations:**
-   ```bash
-   jupyter notebook SCRIPTS/visualizations_for_bert_model_performance.ipynb
-   ```
+1. **Clean & preprocess** raw lyric data.  
+2. Train **traditional ML** models (TF-IDF + Logistic Regression).  
+3. Train an **advanced NLP** model (BERT embeddings).  
+4. **Evaluate** each approach using confusion matrices, PCA plots, and classification reports.
 
 ---
-   - Confusion Matrices, PCA visualization, and Classification Reports can be found in the `OUTPUT/` folder.
+
+## 🚀 Getting Started
+
+### 1. Clone & install
+```bash
+git clone https://github.com/YourUsername/Music-Genre-Case-Study.git
+cd Music-Genre-Case-Study
+pip install -r requirements.txt
+```
+
+### 2. Explore the Case Study Prompt & Rubric
+- **Hook Document:** `Hook_Document.pdf`  
+- **Grading Rubric:** `Rubric.pdf`
+
+---
+
+## 📂 Repository Structure
+```
+.
+├─ README.md
+├─ LICENSE.md
+├─ requirements.txt
+├─ Hook_Document.pdf      # Your one-page mission brief
+├─ Rubric.pdf             # Your two-page detailed rubric
+│
+├─ DATA/
+│   ├─ tcc_ceds_music.csv             # Original lyrics dataset
+│   ├─ Data Appendix Project 1.pdf    # Schema & source notes
+│   ├─ processed_data.csv             # Output of preprocessing
+│   ├─ train_data.csv                 # 80% training split
+│   └─ test_data.csv                  # 20% testing split
+│
+├─ SCRIPTS/
+│   ├─ preprocess_data.py             # Data cleaning & splitting
+│   ├─ train_ml_models.py             # Train TF-IDF + Logistic Regression
+│   ├─ train_bert_model.py            # Fine-tune BERT classifier
+│   ├─ predict_genre_ml_models.py     # Generate TF-IDF model predictions
+│   ├─ predict_genre_bert_model.py    # Generate BERT model predictions
+│   ├─ utils.py                       # Shared helper functions
+│   └─ visualization_scripts/
+│       ├─ visualization_for_ml_models.ipynb
+│       └─ visualizations_for_bert_model_performance.ipynb
+│
+└─ OUTPUT/
+    ├─ confusion_matrices/
+    │   ├─ Confusion Matrix – Logistic Regression.png
+    │   └─ Confusion Matrix – Neural Network.png
+    │
+    ├─ PCA Visualization of BERT Embeddings.png
+    └─ additional_visualizations/      # (Optional deep-dive plots)
+        ├─ Distribution of Misclassified Genres.png
+        ├─ Model Performance Metrics.png
+        ├─ Precision-Recall Curve.png
+        ├─ ROC Curve for Genre Classification.png
+        └─ True vs Predicted Genre Distribution.png
+```
+
+---
+
+## 🔄 Reproducibility
+
+1. **Prepare the data**  
+   ```bash
+   python SCRIPTS/preprocess_data.py   # cleans and creates processed_data.csv
+   # (Optional) re-split:
+   python SCRIPTS/train_test_split.py  # regenerates train_data.csv & test_data.csv
+   ```
+
+2. **Train your models**  
+   ```bash
+   python SCRIPTS/train_ml_models.py   # traditional TF-IDF + Logistic Regression
+   python SCRIPTS/train_bert_model.py  # BERT fine-tuning
+   ```
+
+3. **Make predictions**  
+   ```bash
+   python SCRIPTS/predict_genre_ml_models.py
+   python SCRIPTS/predict_genre_bert_model.py
+   ```
+
+4. **View results**  
+   - Key confusion matrices: `OUTPUT/confusion_matrices/`  
+   - PCA embedding plot: `OUTPUT/PCA Visualization of BERT Embeddings.png`  
+   - Full metrics report: `OUTPUT/classification_report.pdf`  
+   - For additional analyses (ROC, PR curves, etc.): see `OUTPUT/additional_visualizations/`
+
+---
 
 ## 📜 License
-This project is licensed under the MIT License. See the `LICENSE.md` file for details.
+This project is licensed under the MIT License. See `LICENSE.md` for details.
+
+---
 
 ## 📚 References
-- Research papers on NLP and song lyric analysis
-- Scikit-Learn, TensorFlow, and Hugging Face Transformers documentation
-- GitHub repositories on music genre classification
-- https://data.mendeley.com/datasets/3t9vbwxgr5/2
 
+1. Tzanetakis, G., & Cook, P. (2002). Musical Genre Classification of Audio Signals. *IEEE Transactions on Speech and Audio Processing*, 10(5), 293–302. [https://ieeexplore.ieee.org/document/1021073](https://ieeexplore.ieee.org/document/1021073)
+
+2. Pizarro Martinez, S., Zimmermann, M., Offermann, M. S., & Reither, F. (2024). *Exploring Genre and Success Classification through Song Lyrics using DistilBERT: A Fun NLP Venture*. arXiv preprint. [https://arxiv.org/html/2407.21068v1](https://arxiv.org/html/2407.21068v1)
+
+3. GeeksforGeeks. (n.d.). Text Preprocessing for NLP Tasks. [https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/](https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/)
+
+4. Analytics Vidhya. (2021). Text Preprocessing in NLP with Python Codes. [https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/](https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/)
+
+5. Analytics Vidhya. (2021). Metrics to Evaluate Your Classification Model to Take the Right Decisions. [https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/](https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/)
+
+6. Mendeley Data. (2020). Music Lyrics Dataset (1950–2019) for Genre Classification [Dataset]. [https://data.mendeley.com/datasets/3t9vbwxgr5/2](https://data.mendeley.com/datasets/3t9vbwxgr5/2)
+```
