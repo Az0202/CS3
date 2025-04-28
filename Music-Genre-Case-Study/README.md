@@ -103,15 +103,21 @@ This project is licensed under the MIT License. See `LICENSE.md` for details.
 
 ## 📚 References
 
-1. Tzanetakis, G., & Cook, P. (2002). Musical Genre Classification of Audio Signals. *IEEE Transactions on Speech and Audio Processing*, 10(5), 293–302. [https://ieeexplore.ieee.org/document/1021073](https://ieeexplore.ieee.org/document/1021073)
+## 📚 References
+
+1. Tzanetakis, G., & Cook, P. (2002). Musical Genre Classification of Audio Signals. *IEEE Transactions on Speech and Audio Processing*, 10(5), 293–302. [https://ieeexplore.ieee.org/document/1021073]([https://ieeexplore.ieee.org/document/1021073](https://ieeexplore.ieee.org/document/1021072))
 
 2. Pizarro Martinez, S., Zimmermann, M., Offermann, M. S., & Reither, F. (2024). *Exploring Genre and Success Classification through Song Lyrics using DistilBERT: A Fun NLP Venture*. arXiv preprint. [https://arxiv.org/html/2407.21068v1](https://arxiv.org/html/2407.21068v1)
 
-3. GeeksforGeeks. (n.d.). Text Preprocessing for NLP Tasks. [https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/](https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/)
+3. Stanford CS224N (2014). *Classifying Music Genres Based on Lyrics* (Final Report). [https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/reports/final_reports/report003.pdf](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/reports/final_reports/report003.pdf)
 
-4. Analytics Vidhya. (2021). Text Preprocessing in NLP with Python Codes. [https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/](https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/)
+4. Gottlieb, J. D. (2020). *Classifying Music Genres Based on Song Lyrics* [Medium blog post]. [https://medium.com/@joshuadavidgottlieb/classifying-music-genres-based-on-song-lyrics-dc380a281954](https://medium.com/@joshuadavidgottlieb/classifying-music-genres-based-on-song-lyrics-dc380a281954)
 
-5. Analytics Vidhya. (2021). Metrics to Evaluate Your Classification Model to Take the Right Decisions. [https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/](https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/)
+5. GeeksforGeeks. (n.d.). Text Preprocessing for NLP Tasks. [https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/](https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/)
 
-6. Mendeley Data. (2020). Music Lyrics Dataset (1950–2019) for Genre Classification [Dataset]. [https://data.mendeley.com/datasets/3t9vbwxgr5/2](https://data.mendeley.com/datasets/3t9vbwxgr5/2)
+6. Analytics Vidhya. (2021). Text Preprocessing in NLP with Python Codes. [https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/](https://www.analyticsvidhya.com/blog/2021/06/text-preprocessing-in-nlp-with-python-codes/)
+
+7. Analytics Vidhya. (2021). Metrics to Evaluate Your Classification Model to Take the Right Decisions. [https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/](https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/)
+
+8. Mendeley Data. (2020). Music Lyrics Dataset (1950–2019) for Genre Classification [Dataset]. [https://data.mendeley.com/datasets/3t9vbwxgr5/2](https://data.mendeley.com/datasets/3t9vbwxgr5/2)
 ```
