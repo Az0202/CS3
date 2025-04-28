@@ -100,9 +100,6 @@ pip install -r requirements.txt
 This project is licensed under the MIT License. See `LICENSE.md` for details.
 
 ---
-
-## 📚 References
-
 ## 📚 References
 
 1. Tzanetakis, G., & Cook, P. (2002). Musical Genre Classification of Audio Signals. *IEEE Transactions on Speech and Audio Processing*, 10(5), 293–302. [https://ieeexplore.ieee.org/document/1021073]([https://ieeexplore.ieee.org/document/1021073](https://ieeexplore.ieee.org/document/1021072))
