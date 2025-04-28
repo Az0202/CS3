@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ### 2. Explore the Case Study Prompt & Rubric
 - **Hook Document:** `Hook_Document.pdf`[https://github.com/Az0202/CS3/blob/main/Hook_Document.pdf]
-- **Grading Rubric:** `Rubric.pdf`
+- **Grading Rubric:** `Rubric.pdf`[https://github.com/Az0202/CS3/blob/main/Rubric.pdf]
 
 ---
 
