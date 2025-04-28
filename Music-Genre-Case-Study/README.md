@@ -12,9 +12,9 @@ This project explores the possibility of classifying music genres solely based o
 - **GitHub** (for version control and collaboration)
 - **Operating System:** Windows / Mac / Linux
 
-## 📁 Project Structure
+## 📁 CS3
 ```
-📂 Project 1
+📂 Music-Genre-Case-Study
 │── 📄 README.md                    # Project documentation
 │── 📄 LICENSE.md                   # MIT License
 │── 📄 requirements.txt             # List of project dependencies
